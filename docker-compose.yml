@@ -1,0 +1,16 @@
+# base on : https://github.com/Landoop/kafka-topics-ui
+# 127.0.0.1:3030
+version: "2"
+services:
+  kafka-service:
+    image: landoop/fast-data-dev:latest
+    container_name: fast-data-dev
+    environment:
+      ADV_HOST: 127.0.0.1
+    ports:
+      - 2181:2181
+      - 3030:3030
+      - 8081:8081
+      - 8082:8082
+      - 8083:8083
+      - 9092:9092
