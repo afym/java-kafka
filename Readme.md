@@ -1,7 +1,7 @@
 # kafka-topics
 
 ### creating a topic
-kafka-topics --zookeeper 127.0.0.1:2181 --create --topic my_topic --partition 3 --replication-factor 1
+kafka-topics --zookeeper 127.0.0.1:2181 --create --topic my_topic --partitions 3 --replication-factor 1
 
 ### listing topics
 kafka-topics --zookeeper 127.0.0.1:2181 --list
